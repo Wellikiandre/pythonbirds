@@ -17,6 +17,7 @@ class Pessoa:
     def metodo_de_classe_e_atributo(cls):
         return f'{cls} - olhos {cls.olhos}'
 
+
 if __name__=='__main__':
     filho=Pessoa(nome='Cesar',idade=10)
     p=Pessoa(filho,nome='Wellikiandre',idade=30)
