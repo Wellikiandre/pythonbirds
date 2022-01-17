@@ -72,12 +72,8 @@ Exemplo:
 >>>carro.girar_a_esquerda()
 >>>carro.calcular_direcao()
 >>>'Oeste'
-
-
-
-
-
 """
+
 NORTE='Norte'
 SUL='Sul'
 LESTE='Leste'
