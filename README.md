@@ -1,45 +1,9 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/pythonprobr/pythonbirds)
-
 Python Birds
 ===========
 
-Essa versão é a mais simples. Ela não contém replay nem reset, de forma que o jogo não pode retroceder.
+Projeto em Python.
 
-Para versão mais complexa, acesse a branch [diversao](https://github.com/pythonprobr/pythonbirds/tree/diversao)
-
-Projeto para Ensino de Programação Orientadas a Objetos em Python.
-
-A versão utilizada para desenvolvimento foi Python 3.4
-
-Um vídeo fala mais que 1000 palavras: [Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
-
-# Contribuidores
-
-* [Giovane Liberato](https://github.com/giovaneliberato)
-* [Guido Luz](https://github.com/GuidoBR)
-* [Michel Amaral](https://github.com/michelamaral)
-* [Renzo Nuccitelli](https://github.com/renzon)
-
-# Abordagem
-
-Instalar [Python 3](https://www.python.org/download/).
-
-Baixar o zip do projeto (botão Download Zip) 
-
-Os testes se encontram dentro do pacote "testes" e servem para definir a dinâmica das classes. Para rodar todos testes, execute:
-
-    python executor_de_testes.py
-    
-Explicação detalhada sobre classes e métodos se encontram nos scripts atores.py e fase.py.
-
-## Ordem de desenvolvimento
-
-A ordem preferida é começar pelos atores, seguindo a ordem dos testes presentes no script atores_testes.py.
-Depois passar para a fase_teste.py, onde é implementada uma fase.
-
-É possível emular um jogo que termina em vitória rodando:
-
-    python fase_testes.py
+A versão utilizada para desenvolvimento foi Python 3.10
 
 É possível jogar a fase rodando:
 
@@ -47,8 +11,6 @@ Depois passar para a fase_teste.py, onde é implementada uma fase.
 
 Para jogar, utilize as setas para cima e para baixo. Para lançar, utilize a tecla enter ou espaço.
 Demonstração nos vídeos:
-
-[Python Birds](https://www.youtube.com/watch?v=b899h0lNd7U&list=PLA05yVJtRWYTm0sIa6n56UpCjCsR5ekla)
 
 ## script atores.py
 
@@ -119,7 +81,6 @@ gravidade (GRAVIDADE) constante e igual a 10 m/s^2.
 O método lançar recebe o ângulo, em graus, que será feito o lançamento. Ele deve ser convertido para radianos.
 Cada pássaro deve armazenar esse valor e o tempo
 de lançamento para cálculo de sua posíção. Lembrar que o tempo das fórmulas é delta_t = T_final - T_inicial.
-
 
 ### Método de colidir_com_chao
 
@@ -197,16 +158,3 @@ Ele deve:
 1. Calcular a posição de cada pássaro, verificando se ele colidiu com algum obstáculo, porco ou chão.
 2. Retornar instâncias da classe Ponto, informando x, y e caracter respectivo a cada ator.
 
-### Divirta-se!!!!
-
-Powered by [Python Pro](http://adm.python.pro.br)
-
-# Observação Importante
-
-Esse projeto usa somente o interpretador padrão do Python. Para fazer jogos com mais interatividade, existe a biblioteca Pygame. Ela não foi utilizada por motivos de simplicidade, para evitar que o aluno iniciante tenha dificuldades na hora de instalar o projeto.
-
-Contudo o Estevão Fonseca fez um versão com essa biblioteca, confira o projeto:
-
-<https://github.com/estevaofon/angry-birds-python>
-
-Ele também colocou esse [vídeo no Youtube](https://www.youtube.com/watch?v=B7G5JtCFepE). 
