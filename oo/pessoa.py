@@ -17,13 +17,26 @@ class Pessoa:
     def metodo_de_classe_e_atributo(cls):
         return f'{cls} - olhos {cls.olhos}'
 
+class Homem(Pessoa):
+    pass
+
+class Mulher(Pessoa):
+    pass
 
 if __name__=='__main__':
-    filho=Pessoa(nome='Cesar',idade=10)
-    p=Pessoa(filho,nome='Wellikiandre',idade=30)
-    print (f'{p.nome}, {p.idade}')
-    for f in p.filhos:
+    cesar=Homem(nome='Cesar',idade=10)
+    wellikiandre=Homem(cesar,nome='Wellikiandre',idade=30)
+    print (f'{wellikiandre.nome}, {wellikiandre.idade}')
+    for f in wellikiandre.filhos:
         print(f.nome)
         print(f.idade)
-    print (Pessoa.metodo_estatico() , p.metodo_estatico())
-    print (Pessoa.metodo_de_classe_e_atributo(),filho.metodo_de_classe_e_atributo())
+    print (Pessoa.metodo_estatico() , wellikiandre.metodo_estatico())
+    print (Pessoa.metodo_de_classe_e_atributo(),cesar.metodo_de_classe_e_atributo())
+
+### HERANÇA
+
+    pessoa=Pessoa('Anonimo')
+    print(isinstance(pessoa,Pessoa))
+    print(isinstance(pessoa,Homem))
+    print(isinstance(wellikiandre,Pessoa))
+    print(isinstance(wellikiandre,Homem))
